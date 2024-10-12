@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulář</title>
+</head>
+<body>
+
+
+    <div class="container">
+
+        <label for="nazev"> Název:^</label>
+        <input type="text" name="jmeno" id="jmeno" autofocus required>
+
+        <label for="externiCislo"> Extérní číslo</label>
+        <input type="number" name="externiCislo" id="externiCislo" >
+
+        <label for="zakaznik">Zákazník:^</label>
+        <select name="zakaznik" id="zakaznik">
+            <option value="apollo">AD-Apollo IT/ Data</option>
+            <option value="zakaznik1"> Zákazník 1 </option>
+            <option value="zakaznik2">Zákazník 2</option>
+            <option value="zakaznik3">Zákazník 3</option>
+            <option value="zakaznik4">Zákazník 4</option>
+        </select>
+        
+        <label for="projekt">Projekt:</label>
+        <select name="projekt" id="projekt">
+            <option value=""></option>
+            <option value="a">Projekt A</option>
+            <option value="b">Projekt B</option>
+            <option value="c">Projekt C</option>
+            <option value="d">Projekt D</option>
+            <option value="e">Projekt E</option>
+        </select>
+
+        <label for="kategorie">Kategorie:</label>
+        <select name="kategorie" id="kategorie">
+            <option value=""></option>
+            <option value="hardware"> Hardware</option>
+            <option value="software">Software</option>
+            <option value="net">Síťové problémy</option>
+            <option value="email">Email</option>
+            <option value="tiskarna">Tiskárna</option>
+            <option value="bezpecnost">Bezzpečnostní incident</option>
+
+        </select>
+
+        <label for="klasifikace">Klasifikace</label>
+        <select name="klasifikace" id="klasifikace">
+            <option value=""></option>
+            <option value="1">Kategorie 1</option>
+            <option value="2">Kategorie 2</option>
+            <option value="3">Kategorie 1</option>
+        </select>
+
+
+        <label for="zadatel">Žadatel:^</label>
+        <select name="zadatek" id="zadatel">
+            <option value="bral">Bral Peregrin</option>
+            <option value="brandorad">Brandorád Smělmír</option>
+            <option value="jirsak">Křepelka Samvěd</option>
+            <option value="pytlik">Frodo Pytlík</option>
+            <option value="turek" selected>Turek Miroslav</option>  
+        </select>
+
+        <label for="zarizeni">Zařzení:</label>
+        <input type="text" name="zarizeni" id="zarizeni" >
+
+        <input type="text" name="input1" id="input1">
+        <input type="text" name="input2" id="input2">
+
+    </div>
+
+    <div class="container">
+
+        <label for="priorita">Priorita:</label>
+        <select name="priorita" id="priorita">
+            <option value="nizka">Nízká</option>
+            <option value="stredni" selected>Střední</option>
+            <option value="vysoka">Vysoká</option>
+        </select>
+
+        <label for="termin">Požadovaný termín:</label>
+        <input type="date" name="termin" id="termin">
+
+        <label for="ohlaseno">Čas ohlášení:</label>
+        <input type="datetime" name="ohlaseno" id="ohlaseno">
+
+        <label for="stav">Stav:</label>
+        <select name="stav" id="stav">
+            <option value="vytvoren">Vytvořen</option>
+            <option value="zpracovani">Zpracování</option>
+            <option value="vyreseno">Vyřešeno</option>
+        </select>
+
+        <label for="doba">Doba řešení</label>
+        <input type="number" name="doba" id="hodiny" min="0"> <span>hod.</span>
+        <input type="number" name="doba" id="minuty" min="0" max="59"> <span>min.</span>
+
+
+        <label for="komu">Na vědomí</label>
+        <select name="komu" id="komu">
+            <option value=""></option>
+            <option value="aragorn">Elessar Aragorn</option>
+            <option value="elrond">Peredhil Elrond</option>
+            <option value="gandalf">Šedý Gandalf</option>
+        </select>
+
+        <label for="resitele">Řešitelé</label>
+        <select name="resitele" id="resitele">
+                <option value="arven">Arwen</option>   
+                <option value="boromir">Boromir</option>
+                <option value="gimli">Gimli</option>
+                <option value="legolas">Greenleaf Legolas</option>         
+        </select>
+
+    </div>
+
+
+
+
+    
+</body>
+</html>

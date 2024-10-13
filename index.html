@@ -5,184 +5,206 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulář</title>
     <link rel="stylesheet" href="style.css">
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">            
+        <!-- Icon -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
 </head>
 <body>
 
-    <h1>Formulář</h1>
-    <fieldset>
+    <div class="background">
+        <h1>Formulář</h1>
 
-        <div class="container">
-            <div class="form-field">
-                <label for="nazev"> Název:<span class="required">*</span></label>
-                <input type="text" name="nazev" id="nazev" autofocus required>
+        <fieldset>
+            <div class="container section-one">
+                <div class="form-field">
+                    <label for="nazev"> Název:<span class="required">*</span></label>
+                    <input type="text" name="nazev" id="nazev" autofocus required>
+                </div>
+
+                <div class="form-field">
+                    <label for="externiCislo"> Extérní číslo:</label>
+                    <input type="number" name="externiCislo" id="externiCislo" >
+                </div>
+
+                <div class="form-field">
+                    <label for="zakaznik">Zákazník:<span class="required">*</span></label>
+                    <select name="zakaznik" id="zakaznik">
+                        <option value="apollo">AD-Apollo IT/ Data</option>
+                        <option value="zakaznik1"> Zákazník 1 </option>
+                        <option value="zakaznik2">Zákazník 2</option>
+                        <option value="zakaznik3">Zákazník 3</option>
+                        <option value="zakaznik4">Zákazník 4</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="projekt">Projekt:</label>
+                    <select name="projekt" id="projekt">
+                        <option value=""></option>
+                        <option value="a">Projekt A</option>
+                        <option value="b">Projekt B</option>
+                        <option value="c">Projekt C</option>
+                        <option value="d">Projekt D</option>
+                        <option value="e">Projekt E</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="kategorie">Kategorie:</label>
+                    <select name="kategorie" id="kategorie">
+                        <option value=""></option>
+                        <option value="hardware"> Hardware</option>
+                        <option value="software">Software</option>
+                        <option value="net">Síťové problémy</option>
+                        <option value="email">Email</option>
+                        <option value="tiskarna">Tiskárna</option>
+                        <option value="bezpecnost">Bezzpečnostní incident</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="klasifikace">Klasifikace</label>
+                    <select name="klasifikace" id="klasifikace">
+                        <option value=""></option>
+                        <option value="1">Kategorie 1</option>
+                        <option value="2">Kategorie 2</option>
+                        <option value="3">Kategorie 3</option>
+                    </select>
+                </div>
+
+                <div class="form-field form-gap">
+                    <label for="zadatel">Žadatel:<span class="required">*</span></label>
+                    <select name="zadatel" id="zadatel">
+                        <option value="bral">Bral Peregrin</option>
+                        <option value="brandorad">Brandorád Smělmír</option>
+                        <option value="samved" selected>Křepelka Samvěd</option>
+                        <option value="pytlik">Frodo Pytlík</option>
+                    </select>
+                </div>
+
+                <div class="form-field form-gap">
+                    <label for="zarizeni">Zařzení:</label>
+                    <input type="text" name="zarizeni" id="zarizeni" >
+                </div>
+
+                <div class="form-field">
+                    <label for="input1"></label>
+                    <input type="text" name="input1" id="input1">
+                </div>
+
+                <div class="form-field">
+                    <label for="input2"></label>
+                    <input type="text" name="input2" id="input2">
+                </div>
+
             </div>
+        </fieldset>
 
-            <div class="form-field">
-                <label for="externiCislo"> Extérní číslo:</label>
-                <input type="number" name="externiCislo" id="externiCislo" >
-            </div>
+        <fieldset>
 
-            <div class="form-field">
-                <label for="zakaznik">Zákazník:<span class="required">*</span></label>
-                <select name="zakaznik" id="zakaznik">
-                    <option value="apollo">AD-Apollo IT/ Data</option>
-                    <option value="zakaznik1"> Zákazník 1 </option>
-                    <option value="zakaznik2">Zákazník 2</option>
-                    <option value="zakaznik3">Zákazník 3</option>
-                    <option value="zakaznik4">Zákazník 4</option>
-                </select>
-            </div>
+            <div  class="container section-two">
+                    <div class="box-three">
+                        <div class="form-field">
+                            <label for="priorita">Priorita:</label>
+                            <select name="priorita" id="priorita">
+                                <option value="nizka">Nízká</option>
+                                <option value="stredni" selected>Střední</option>
+                                <option value="vysoka">Vysoká</option>
+                            </select>
+                        </div>
 
-            <div class="form-field">
-            <label for="projekt">Projekt:</label>
-                <select name="projekt" id="projekt">
-                    <option value=""></option>
-                    <option value="a">Projekt A</option>
-                    <option value="b">Projekt B</option>
-                    <option value="c">Projekt C</option>
-                    <option value="d">Projekt D</option>
-                    <option value="e">Projekt E</option>
-                </select>
-            </div>
+                        <div class="form-field">
+                            <label for="stav">Stav:</label>
+                            <select name="stav" id="stav">
+                                <option value="vytvoren">Vytvořen</option>
+                                <option value="zpracovani">Zpracování</option>
+                                <option value="vyreseno">Vyřešeno</option>
+                            </select>
+                        </div>
+                    </div>
 
-            <div class="form-field">
-            <label for="kategorie">Kategorie:</label>
-            <select name="kategorie" id="kategorie">
-                <option value=""></option>
-                <option value="hardware"> Hardware</option>
-                <option value="software">Software</option>
-                <option value="net">Síťové problémy</option>
-                <option value="email">Email</option>
-                <option value="tiskarna">Tiskárna</option>
-                <option value="bezpecnost">Bezzpečnostní incident</option>
-            </select>
-            </div>
+                    <div class="box-three">
+                        <div class="form-field">
+                            <label for="termin">Požadovaný termín:</label>
+                            <input type="date" name="termin" id="termin">
+                        </div>
+                    </div>
 
-            <div class="form-field">
-                <label for="klasifikace">Klasifikace</label>
-                <select name="klasifikace" id="klasifikace">
-                    <option value=""></option>
-                    <option value="1">Kategorie 1</option>
-                    <option value="2">Kategorie 2</option>
-                    <option value="3">Kategorie 3</option>
-                </select>
-            </div>
+                    <div class="box-three">
+                        <div class="form-field">
+                            <label for="ohlaseno">Čas ohlášení:</label>
+                            <input type="datetime-local" name="ohlaseno" id="ohlaseno">
+                        </div>
 
-            <div class="form-field form-gap">
-                <label for="zadatel">Žadatel:<span class="required">*</span></label>
-                <select name="zadatel" id="zadatel">
-                    <option value="bral">Bral Peregrin</option>
-                    <option value="brandorad">Brandorád Smělmír</option>
-                    <option value="samved" selected>Křepelka Samvěd</option>
-                    <option value="pytlik">Frodo Pytlík</option>
-                </select>
-            </div>
+                        <div class="form-field">
+                            <label for="doba">Doba řešení:</label>
+                            <input type="number" name="doba" id="hodiny" min="0"> <span>hod.</span>
+                            <input type="number" name="minuty" id="minuty" min="0" max="59"> <span>min.</span>
+                        </div>
+                    </div>
 
-            <div class="form-field form-gap">
-                <label for="zarizeni">Zařzení:</label>
-                <input type="text" name="zarizeni" id="zarizeni" >
-            </div>
-
-            <div class="form-field">
-                <label for="input1"></label>
-                <input type="text" name="input1" id="input1">
-            </div>
-
-            <div class="form-field">
-                <label for="input2"></label>
-                <input type="text" name="input2" id="input2">
-            </div>
-        </div>
-    </fieldset>
-
-    <fieldset>
-
-        <div>
-            <div class="containerB">
-                <div class="box">
-                    <div class="smallbox">
-                        <label for="priorita">Priorita:</label>
-                        <select name="priorita" id="priorita">
-                            <option value="nizka">Nízká</option>
-                            <option value="stredni" selected>Střední</option>
-                            <option value="vysoka">Vysoká</option>
+                <div class="box-two">
+                    <div class="form-field">
+                        <label for="navedomi">Na vědomí: </label>
+                        <select name="navedomi" id="navedomi">
+                            <option value=""></option>
+                            <option value="aragorn">Elessar Aragorn</option>
+                            <option value="elrond">Peredhil Elrond</option>
+                            <option value="gandalf">Šedý Gandalf</option>
                         </select>
                     </div>
 
-                    <div class="smallbox">
-                        <label for="stav">Stav:</label>
-                        <select name="stav" id="stav">
-                            <option value="vytvoren">Vytvořen</option>
-                            <option value="zpracovani">Zpracování</option>
-                            <option value="vyreseno">Vyřešeno</option>
+                    <div class="form-field">
+                        <label for="textarea1"></label>
+                        <textarea name="textarea1" id="textarea1"></textarea>
+                    </div>
+                </div>
+
+                <div class="box-two">
+                    <div class="form-field">
+                        <label for="resitele">Řešitelé:</label>
+                        <select name="resitele" id="resitele">
+                            <option value=""></option>
+                            <option value="arven">Arwen</option>   
+                            <option value="boromir">Boromir</option>
+                            <option value="gimli">Gimli</option>
+                            <option value="legolas">Greenleaf Legolas</option>         
+                        </select>
+                    </div>
+                
+                    <div class="form-field">
+                        <label for="textarea2"></label>
+                        <textarea name="textarea2" id="textarea2"></textarea>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="zodpovida">Zodpovídá:</label>
+                        <select name="zodpovida" id="zodpovida">
+                            <option value=""></option>
+                            <option value="glorfindel">Glorfindel</option>
+                            <option value="celebrian">Celebrían</option>
                         </select>
                     </div>
                 </div>
+                
 
-                <div class="box">
-                    <label for="termin">Požadovaný termín:</label>
-                    <input type="date" name="termin" id="termin">
-                </div>
-
-                <div class="box">
-                    <div class="smallbox">
-                        <label for="ohlaseno">Čas ohlášení:</label>
-                        <input type="datetime-local" name="ohlaseno" id="ohlaseno">
+                    <div class="form-field">
+                        <label for="text">Text:</label>
+                        <textarea name="text" id="text" rows="10"></textarea>
                     </div>
-
-                    <div class="smallbox">
-                        <label for="doba">Doba řešení:</label>
-                        <input type="number" name="doba" id="hodiny" min="0"> <span>hod.</span>
-                        <input type="number" name="minuty" id="minuty" min="0" max="59"> <span>min.</span>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <label for="navedomi">Na vědomí: </label>
-                <select name="navedomi" id="navedomi">
-                    <option value=""></option>
-                    <option value="aragorn">Elessar Aragorn</option>
-                    <option value="elrond">Peredhil Elrond</option>
-                    <option value="gandalf">Šedý Gandalf</option>
-                </select>
-    
-                <textarea name="textarea1" id="textarea1"></textarea>
-
-            </div>
-
-            <div>
-                <label for="resitele">Řešitelé</label>
-                <select name="resitele" id="resitele">
-                    <option value=""></option>
-                    <option value="arven">Arwen</option>   
-                    <option value="boromir">Boromir</option>
-                    <option value="gimli">Gimli</option>
-                    <option value="legolas">Greenleaf Legolas</option>         
-                </select>
             
-                <textarea name="textarea2" id="textarea2"></textarea>
-    
-                <label for="zodpovida">Zodpovídá:</label>
-                <select name="zodpovida" id="zodpovida">
-                    <option value=""></option>
-                    <option value="glorfindel">Glorfindel</option>
-                    <option value="celebrian">Celebrían</option>
-                </select>
+                    <div class="form-field">
+                        <label for="interni">Interní:</label>
+                        <textarea name="interni" id="interni" rows="10"></textarea>
+                    </div>
             </div>
-        </div>
 
-        <div>
-            <label for="text">Text:</label>
-            <textarea name="text" id="text"></textarea>
-        </div>
-
-        <div>
-            <label for="interni">Interní:</label>
-            <textarea name="interni" id="interni"></textarea>
-        </div>
-
-    </fieldset>
- 
+        </fieldset>
+    </div>
 </body>
 </html>

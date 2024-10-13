@@ -1,14 +1,58 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center ;
+    align-items: center;
+
+}
+
+h1{
+    flex: 100%;
+    text-align: center;
+}
+
+fieldset{
+    flex: 70%;
+    max-width: 900px;
+    padding: 1.5%;
+    margin: 10px 0;
+}
 
 .container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
-    gap: 10px;
+    gap: 0 20px ;
 }
 
-.box{
-    flex: calc(100%/3);
+.form-field{
+    flex: calc(50% - 10px);
+    display: flex;
     background-color: aliceblue;
-    padding: 5%;
+    margin-bottom: 10px;
+}
+
+.form-gap{
+    margin: 0;
+}
+
+.form-field label{
+    flex: 0 0 100px;
+}
+
+.form-field input,
+.form-field select{
+    flex: 1 1 100%;
+    width: 100%;
+}
+
+form{
+    width: 100%;
+    max-width: 400px;
+}
+
+.smallbox{
+    flex: 100%;
+    width: 100%;
 }

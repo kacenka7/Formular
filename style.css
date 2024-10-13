@@ -52,7 +52,6 @@ fieldset{
 }
 
 
-
 .container .form-field{
     display: flex;
     margin-bottom: 10px;
@@ -71,6 +70,11 @@ fieldset{
     flex: 0 0 100px;
 }
 
+.form-field label{
+    flex: 0 0 100px;
+}
+
+
 .form-field input,
 .form-field select,
 .form-field textarea{
@@ -81,9 +85,22 @@ fieldset{
     border-radius: 5px;
 }
 
-form{
-    width: 100%;
-    max-width: 400px;
+
+.box-button{
+    flex: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+button{
+    font-family: "Nunito"; 
+    border: 1px lightgray solid;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: rgb(231, 243, 244, 0.4);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* sekce dva */

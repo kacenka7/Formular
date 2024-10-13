@@ -99,22 +99,35 @@
         <input type="number" name="doba" id="hodiny" min="0"> <span>hod.</span>
         <input type="number" name="doba" id="minuty" min="0" max="59"> <span>min.</span>
 
+        <div>
+            <label for="komu">Na vědomí</label>
+            <select name="komu" id="komu">
+                <option value=""></option>
+                <option value="aragorn">Elessar Aragorn</option>
+                <option value="elrond">Peredhil Elrond</option>
+                <option value="gandalf">Šedý Gandalf</option>
+            </select>
 
-        <label for="komu">Na vědomí</label>
-        <select name="komu" id="komu">
-            <option value=""></option>
-            <option value="aragorn">Elessar Aragorn</option>
-            <option value="elrond">Peredhil Elrond</option>
-            <option value="gandalf">Šedý Gandalf</option>
-        </select>
+            <textarea name="textarea1" id="textarea1"></textarea>
+        </div>
 
-        <label for="resitele">Řešitelé</label>
-        <select name="resitele" id="resitele">
+        <div>
+            <label for="resitele">Řešitelé</label>
+            <select name="resitele" id="resitele">
                 <option value="arven">Arwen</option>   
                 <option value="boromir">Boromir</option>
                 <option value="gimli">Gimli</option>
                 <option value="legolas">Greenleaf Legolas</option>         
-        </select>
+            </select>
+        
+            <textarea name="textarea2" id="textarea2"></textarea>
+
+            <label for="zodpovida">Zodpovídá:</label>
+            <select name="zodpovida" id="zodpovida">
+                <option value="glorfindel">Glorfindel</option>
+                <option value="celebrian">Celebrían</option>
+            </select>
+        </div>
 
     </div>
 

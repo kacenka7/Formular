@@ -1,0 +1,14 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    gap: 10px;
+}
+
+.box{
+    flex: calc(100%/3);
+    background-color: aliceblue;
+    padding: 5%;
+}

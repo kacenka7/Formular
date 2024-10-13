@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulář</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 
-    <div class="container">
+    <fieldset>
 
         <label for="nazev"> Název:^</label>
-        <input type="text" name="jmeno" id="jmeno" autofocus required>
+        <input type="text" name="nazev" id="nazev" autofocus required>
 
         <label for="externiCislo"> Extérní číslo</label>
         <input type="number" name="externiCislo" id="externiCislo" >
@@ -71,69 +72,87 @@
         <input type="text" name="input1" id="input1">
         <input type="text" name="input2" id="input2">
 
-    </div>
+    </fieldset>
 
-    <div class="container">
-
-        <label for="priorita">Priorita:</label>
-        <select name="priorita" id="priorita">
-            <option value="nizka">Nízká</option>
-            <option value="stredni" selected>Střední</option>
-            <option value="vysoka">Vysoká</option>
-        </select>
-
-        <label for="termin">Požadovaný termín:</label>
-        <input type="date" name="termin" id="termin">
-
-        <label for="ohlaseno">Čas ohlášení:</label>
-        <input type="datetime" name="ohlaseno" id="ohlaseno">
-
-        <label for="stav">Stav:</label>
-        <select name="stav" id="stav">
-            <option value="vytvoren">Vytvořen</option>
-            <option value="zpracovani">Zpracování</option>
-            <option value="vyreseno">Vyřešeno</option>
-        </select>
-
-        <label for="doba">Doba řešení</label>
-        <input type="number" name="doba" id="hodiny" min="0"> <span>hod.</span>
-        <input type="number" name="doba" id="minuty" min="0" max="59"> <span>min.</span>
+    <fieldset>
 
         <div>
-            <label for="komu">Na vědomí</label>
-            <select name="komu" id="komu">
-                <option value=""></option>
-                <option value="aragorn">Elessar Aragorn</option>
-                <option value="elrond">Peredhil Elrond</option>
-                <option value="gandalf">Šedý Gandalf</option>
-            </select>
+            <div class="container">
+                <div class="box">
+                    <label for="priorita">Priorita:</label>
+                    <select name="priorita" id="priorita">
+                        <option value="nizka">Nízká</option>
+                        <option value="stredni" selected>Střední</option>
+                        <option value="vysoka">Vysoká</option>
+                    </select>
 
-            <textarea name="textarea1" id="textarea1"></textarea>
-        </div>
+                    <label for="stav">Stav:</label>
+                    <select name="stav" id="stav">
+                        <option value="vytvoren">Vytvořen</option>
+                        <option value="zpracovani">Zpracování</option>
+                        <option value="vyreseno">Vyřešeno</option>
+                    </select>
+                </div>
 
-        <div>
-            <label for="resitele">Řešitelé</label>
-            <select name="resitele" id="resitele">
-                <option value="arven">Arwen</option>   
-                <option value="boromir">Boromir</option>
-                <option value="gimli">Gimli</option>
-                <option value="legolas">Greenleaf Legolas</option>         
-            </select>
-        
-            <textarea name="textarea2" id="textarea2"></textarea>
+                <div class="box">
+                    <label for="termin">Požadovaný termín:</label>
+                    <input type="date" name="termin" id="termin">
+                </div>
 
-            <label for="zodpovida">Zodpovídá:</label>
-            <select name="zodpovida" id="zodpovida">
-                <option value="glorfindel">Glorfindel</option>
-                <option value="celebrian">Celebrían</option>
-            </select>
-        </div>
+                <div class="box">
+                    <label for="ohlaseno">Čas ohlášení:</label>
+                    <input type="datetime" name="ohlaseno" id="ohlaseno">
 
-    </div>
+                    <label for="doba">Doba řešení</label>
+                    <input type="number" name="doba" id="hodiny" min="0"> <span>hod.</span>
+                    <input type="number" name="doba" id="minuty" min="0" max="59"> <span>min.</span>
+                </div>
+            </div>
 
-
-
-
+            <div>
+                <label for="navedomi">Na vědomí: </label>
+                <select name="navedomi" id="navedomi">
+                    <option value=""></option>
+                    <option value="aragorn">Elessar Aragorn</option>
+                    <option value="elrond">Peredhil Elrond</option>
+                    <option value="gandalf">Šedý Gandalf</option>
+                </select>
     
+                <textarea name="textarea1" id="textarea1"></textarea>
+
+            </div>
+
+            <div>
+                <label for="resitele">Řešitelé</label>
+                <select name="resitele" id="resitele">
+                    <option value="arven">Arwen</option>   
+                    <option value="boromir">Boromir</option>
+                    <option value="gimli">Gimli</option>
+                    <option value="legolas">Greenleaf Legolas</option>         
+                </select>
+            
+                <textarea name="textarea2" id="textarea2"></textarea>
+    
+                <label for="zodpovida">Zodpovídá:</label>
+                <select name="zodpovida" id="zodpovida">
+                    <option value=""></option>
+                    <option value="glorfindel">Glorfindel</option>
+                    <option value="celebrian">Celebrían</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <label for="text">Text:</label>
+            <textarea name="text" id="text"></textarea>
+        </div>
+
+        <div>
+            <label for="interni">Interní:</label>
+            <textarea name="interni" id="interni"></textarea>
+        </div>
+
+    </fieldset>
+ 
 </body>
 </html>
